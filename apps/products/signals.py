@@ -20,7 +20,7 @@ def send_telegram_notification(sender, instance, **kwargs):
 
         # Отправляем сообщение в Telegram
         chat_id = "-4084669223"  # Замените на ваш реальный chat_id
-        bot_token = TELEGRAM_BOT_TOKEN  # Замените на ваш реальный токен
+        bot_token = '6881703263:AAFGNTpE17PzX7q-2UDi1H9kha-tVKuAfbw'  # Замените на ваш реальный токен
         url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
         payload = {"chat_id": chat_id, "text": message_text}
 
