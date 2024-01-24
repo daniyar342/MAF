@@ -1,6 +1,11 @@
 from django.contrib import admin
 from .models import Product, SubCategory, Category
 from .models import Product, SubCategory, Category, Order
+from django.contrib.auth.models import Group, User
+
+
+admin.site.unregister(User)
+admin.site.unregister(Group)
 
 
 @admin.register(Product)
