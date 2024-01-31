@@ -1,8 +1,6 @@
 FROM python:3.11
 WORKDIR /usr/src/app
 
-EXPOSE 8000
-
 COPY requirements.txt ./
 
 COPY . .
